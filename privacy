@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Notice - Ovia – Real Voices, Real Connections</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5F8C78',
+                        secondary: '#85B8A3',
+                        softBg: '#F3F7F5',
+                        cardbg: '#FFFFFF',
+                        textlight: '#3E5F50',
+                        borderSoft: '#D1E2DB'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .scrollbar-hide::-webkit-scrollbar {
+                display: none;
+            }
+            .text-gradient {
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+            }
+            .section-wrap{
+                @apply bg-white rounded-2xl p-6 shadow-sm border border-borderSoft relative overflow-hidden;
+            }
+            .dot-pattern {
+                background-image: radial-gradient(#d1e2db 7%, transparent 7%);
+                background-size: 20px 20px;
+            }
+            .corner-accent {
+                @apply absolute w-24 h-24 opacity-10 pointer-events-none;
+            }
+        }
+        body {
+            background-color: #F3F7F5;
+            background-image: radial-gradient(circle at top left, #E6EFEB 0%, transparent 55%);
+        }
+    </style>
+</head>
+<body class="min-h-screen text-slate-700 font-sans">
+<div class="max-w-3xl mx-auto px-4 py-10 md:py-14">
+    <!-- Page Header -->
+    <div class="text-center mb-12 relative py-6 dot-pattern rounded-3xl">
+        <div class="inline-flex items-center justify-center mb-5">
+            <i class="fa-solid fa-waveform-lines text-primary text-4xl"></i>
+        </div>
+        <h1 class="text-[clamp(1.7rem,5vw,2.3rem)] font-semibold text-primary">Privacy Notice</h1>
+        <p class="mt-3 text-textlight/80 text-sm">Ovia – Real Voices, Real Connections</p>
+        <p class="text-xs mt-2 text-slate-500">Revised Date: 2026.08.06</p>
+    </div>
+
+    <div class="space-y-6">
+        <!-- Opening Paragraph -->
+        <div class="section-wrap">
+            <span class="corner-accent top-0 right-0 bg-secondary rounded-bl-full"></span>
+            <p class="text-sm md:text-base leading-relaxed text-slate-700">
+                This privacy statement sets out how Ovia Development Company (“we”, “us” or “our team”) gathers, handles, stores and safeguards personal information belonging to end‑users of our voice‑focused social mobile application <strong>Ovia – Real Voices, Real Connections</strong> (Application ID: com.ovia.popte). By downloading, installing and continuing to make use of Ovia, you confirm you have gone through and fully accept every clause laid out within this privacy notice. Should you disagree with any provision listed below, you must discontinue usage of our mobile software right away.
+            </p>
+        </div>
+
+        <div class="section-wrap">
+            <span class="corner-accent bottom-0 left-0 bg-primary rounded-tr-full"></span>
+            <h2 class="text-lg font-semibold text-primary mb-4 flex items-center justify-between">
+                <span class="flex items-center gap-3">
+                    <span class="w-1 h-6 bg-secondary rounded-full"></span>
+                    1. Responsible Party For Personal Information
+                </span>
+                <i class="fa-solid fa-user-shield text-secondary"></i>
+            </h2>
+            <div class="text-sm md:text-base leading-relaxed text-slate-700 space-y-3">
+                <p>
+                    The party accountable for managing your personal data is raheel khan, operating under Ovia Development Company. For all inquiries concerning privacy matters, data access requests or your personal details, you may reach our support team via electronic mail:
+                    <span class="text-primary font-medium">raheelk.dev@gmail.com</span>
+                </p>
+                <p>
+                    Registered business premise: 112 Oakwood Avenue, Toronto ON M5V 2T7, Canada
+                </p>
+            </div>
+        </div>
+
+        <div class="section-wrap">
+            <span class="corner-accent top-0 right-0 bg-secondary rounded-bl-full"></span>
+            <h2 class="text-lg font-semibold text-primary mb-4 flex items-center justify-between">
+                <span class="flex items-center gap-3">
+                    <span class="w-1 h-6 bg-secondary rounded-full"></span>
+                    2. Information We Collect From End‑Users
+                </span>
+                <i class="fa-solid fa-database text-secondary"></i>
+            </h2>
+            <div class="text-sm md:text-base leading-relaxed text-slate-700">
+                <p class="mb-3">We may obtain various types of data while you interact within our voice‑chat social community:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li><strong>Account And Profile Details:</strong> Self‑chosen display name, uploaded profile avatar, public bio text and any contact information you voluntarily supply when creating your user account.</li>
+                    <li><strong>Voice Conversation Material:</strong> Live audio streams generated during real‑time voice chats with other platform participants. Voice data gets temporary processing to deliver interactive audio features. We do not permanently save most voice conversations unless users manually turn on recording functions.</li>
+                    <li><strong>Hardware And System‑Related Data:</strong> Mobile device model, operating system build, unique device identifiers, network connection metadata, application crash logs, public internet protocol address and usage analytics to maintain stable app performance.</li>
+                    <li><strong>User‑Generated Shared Material:</strong> Text messages, image files and other media content you actively send inside public voice spaces as well as private one‑on‑one conversations within Ovia.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-wrap">
+            <span class="corner-accent bottom-0 left-0 bg-primary rounded-tr-full"></span>
+            <h2 class="text-lg font-semibold text-primary mb-4 flex items-center justify-between">
+                <span class="flex items-center gap-3">
+                    <span class="w-1 h-6 bg-secondary rounded-full"></span>
+                    3. Purposes For Processing Gathered Information
+                </span>
+                <i class="fa-solid fa-bullseye text-secondary"></i>
+            </h2>
+            <div class="text-sm md:text-base leading-relaxed text-slate-700">
+                <p class="mb-3">We process your personal data for these legitimate operational objectives:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Supply, sustain, enhance and roll out updates for all voice‑chat and social networking capabilities offered by Ovia;</li>
+                    <li>Verify user identities, administer registered profiles and block unauthorized account login attempts;</li>
+                    <li>Carry out platform content moderation activities, limit harmful conduct and safeguard safety for every community participant;</li>
+                    <li>Resolve technical faults, respond to user help‑desk submissions and fix service malfunctions;</li>
+                    <li>Examine anonymized usage patterns to improve user experience and build additional voice‑driven social functions;</li>
+                    <li>Enforce our service terms and apply access restrictions for profiles violating community behavioural guidelines.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-wrap">
+            <span class="corner-accent top-0 right-0 bg-secondary rounded-bl-full"></span>
+            <h2 class="text-lg font-semibold text-primary mb-4 flex items-center justify-between">
+                <span class="flex items-center gap-3">
+                    <span class="w-1 h-6 bg-secondary rounded-full"></span>
+                    4. Circumstances Allowing Information Disclosure
+                </span>
+                <i class="fa-solid fa-share-nodes text-secondary"></i>
+            </h2>
+            <div class="text-sm md:text-base leading-relaxed text-slate-700">
+                <p class="mb-3">We will never sell your personal details to third‑party commercial entities without your clear, explicit approval. Data sharing may only take place under the following situations:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Authorized external service providers supporting app operations (cloud hosting, crash diagnostic services), who are bound by strict data‑protection contractual obligations;</li>
+                    <li>Official law‑enforcement bodies, in response to valid legal summons, court judgements or regulatory reporting requirements mandating data release;</li>
+                    <li>Corporate merger, acquisition or asset transfer occurrences, where user information transfers along with business assets while existing privacy commitments stay effective;</li>
+                    <li>Scenarios necessary to defend our lawful interests, protect platform participants or stop ongoing unlawful behaviour.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-wrap">
+            <span class="corner-accent bottom-0 left-0 bg-primary rounded-tr-full"></span>
+            <h2 class="text-lg font-semibold text-primary mb-4 flex items-center justify-between">
+                <span class="flex items-center gap-3">
+                    <span class="w-1 h-6 bg-secondary rounded-full"></span>
+                    5. Data Retention Policies And Protective Measures
+                </span>
+                <i class="fa-solid fa-lock text-secondary"></i>
+            </h2>
+            <div class="text-sm md:text-base leading-relaxed text-slate-700 space-y-3">
+                <p>We apply widely‑accepted industry‑grade security standards to shield your personal information from unauthorized access, data loss, information leakage or improper modification. Even so, no internet‑based digital platform can offer absolute security for information transmitted across online networks.</p>
+                <p>We hold onto user data only for periods reasonably required for business needs: account‑related information remains stored as long as your profile stays active. Once you submit an official account deletion request, we will erase your personally identifiable records within time limits set by applicable local legislation. A small subset of records may be preserved longer to satisfy statutory compliance duties.</p>
+            </div>
+        </div>
+
+        <div class="section-wrap">
+            <span class="corner-accent top-0 right-0 bg-secondary rounded-bl-full"></span>
+            <h2 class="text-lg font-semibold text-primary mb-4 flex items-center justify-between">
+                <span class="flex items-center gap-3">
+                    <span class="w-1 h-6 bg-secondary rounded-full"></span>
+                    6. Your Available Rights Regarding Personal Data
+                </span>
+                <i class="fa-solid fa-user-check text-secondary"></i>
+            </h2>
+            <div class="text-sm md:text-base leading-relaxed text-slate-700">
+                <p class="mb-3">Subject to applicable regional privacy regulations, you hold the rights listed below:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>The entitlement to obtain a copy of all personal records we hold connected with your user profile;</li>
+                    <li>The entitlement to amend inaccurate or incomplete profile‑related information;</li>
+                    <li>The entitlement to submit formal requests for full account removal and deletion of associated personal records;</li>
+                    <li>The entitlement to withdraw any prior consent you have granted for personal‑data processing activities;</li>
+                    <li>The entitlement to lodge formal complaints with local data‑protection supervisory authorities.</li>
+                </ul>
+                <p class="mt-3">To exercise any one of these entitlements, send your formal application using the contact email listed above.</p>
+            </div>
+        </div>
+
+        <div class="section-wrap">
+            <span class="corner-accent bottom-0 left-0 bg-primary rounded-tr-full"></span>
+            <h2 class="text-lg font-semibold text-primary mb-4 flex items-center justify-between">
+                <span class="flex items-center gap-3">
+                    <span class="w-1 h-6 bg-secondary rounded-full"></span>
+                    7. Provisions For Underage Site Visitors
+                </span>
+                <i class="fa-solid fa-child-reaching text-secondary"></i>
+            </h2>
+            <div class="text-sm md:text-base leading-relaxed text-slate-700">
+                <p>Ovia is not meant for individuals under thirteen years old. We do not intentionally collect personal information belonging to minors falling under this age threshold. If you become aware we have obtained data from a child without legal guardian consent, please notify us promptly, and we will remove such information without undue delay.</p>
+            </div>
+        </div>
+
+        <div class="section-wrap">
+            <span class="corner-accent top-0 right-0 bg-secondary rounded-bl-full"></span>
+            <h2 class="text-lg font-semibold text-primary mb-4 flex items-center justify-between">
+                <span class="flex items-center gap-3">
+                    <span class="w-1 h-6 bg-secondary rounded-full"></span>
+                    8. Adjustments Made To This Privacy Notice
+                </span>
+                <i class="fa-solid fa-file-pen text-secondary"></i>
+            </h2>
+            <div class="text-sm md:text-base leading-relaxed text-slate-700">
+                <p>We keep the authority to revise this privacy notice at any moment. When material adjustments get introduced, we will publish the revised document inside the Ovia mobile application and update the “Revised Date” displayed near the top of this page. Your continued usage of our voice‑social platform after updates take effect counts as acceptance of the revised privacy provisions.</p>
+            </div>
+        </div>
+
+        <div class="section-wrap">
+            <span class="corner-accent bottom-0 left-0 bg-primary rounded-tr-full"></span>
+            <h2 class="text-lg font-semibold text-primary mb-4 flex items-center justify-between">
+                <span class="flex items-center gap-3">
+                    <span class="w-1 h-6 bg-secondary rounded-full"></span>
+                    9. Ways To Reach Our Team
+                </span>
+                <i class="fa-solid fa-envelope text-secondary"></i>
+            </h2>
+            <div class="text-sm md:text-base leading-relaxed text-slate-700">
+                <p>Should you hold questions, feedback or data‑related requests about this notice and Ovia’s personal‑data handling procedures, please write to our team via email:
+                    <span class="text-primary font-medium">raheelk.dev@gmail.com</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Footer -->
+    <div class="mt-12 text-center text-xs text-slate-500">
+        <p>Ovia – Real Voices, Real Connections | Application ID: com.ovia.popte</p>
+        <p class="mt-1">© 2026 Ovia Development Company. All intellectual rights reserved.</p>
+    </div>
+</div>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"ccc37c94507049d284be0a83cfba3f45","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

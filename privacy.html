@@ -1,23 +1,36 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Notice - Ovia – Real Voices, Real Connections</title>
+    <title>Privacy Policy & Child Safety Standards - Ovia – Real Voices Connections</title>
+    <meta name="description" content="Privacy Policy, User Data Protection, and Child Safety Standards for Ovia – Real Voices Connections (com.ovia.popte).">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        primary: '#5F8C78',
-                        secondary: '#85B8A3',
-                        softBg: '#F3F7F5',
-                        cardbg: '#FFFFFF',
-                        textlight: '#3E5F50',
-                        borderSoft: '#D1E2DB'
+                        brand: {
+                            50: '#F2F9F6',
+                            100: '#E1F2EB',
+                            500: '#4A7C68',
+                            600: '#3D6857',
+                            700: '#315446',
+                            800: '#264237',
+                            900: '#1B3028',
+                        },
+                        safety: {
+                            50: '#FEF2F2',
+                            100: '#FEE2E2',
+                            500: '#EF4444',
+                            600: '#DC2626',
+                            700: '#B91C1C',
+                        }
                     },
                     fontFamily: {
                         sans: ['Inter', 'system-ui', 'sans-serif'],
@@ -26,231 +39,402 @@
             }
         }
     </script>
-    <style type="text/tailwindcss">
-        @layer utilities {
-            .scrollbar-hide::-webkit-scrollbar {
-                display: none;
-            }
-            .text-gradient {
-                background-clip: text;
-                -webkit-background-clip: text;
-                color: transparent;
-            }
-            .section-wrap{
-                @apply bg-white rounded-2xl p-6 shadow-sm border border-borderSoft relative overflow-hidden;
-            }
-            .dot-pattern {
-                background-image: radial-gradient(#d1e2db 7%, transparent 7%);
-                background-size: 20px 20px;
-            }
-            .corner-accent {
-                @apply absolute w-24 h-24 opacity-10 pointer-events-none;
-            }
-        }
+    <style>
         body {
-            background-color: #F3F7F5;
-            background-image: radial-gradient(circle at top left, #E6EFEB 0%, transparent 55%);
+            font-family: 'Inter', sans-serif;
+            background-color: #F8FAFC;
+            color: #334155;
+        }
+        .section-card {
+            background: #FFFFFF;
+            border-radius: 1rem;
+            border: 1px solid #E2E8F0;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+            transition: border-color 0.2s ease;
+        }
+        .section-card:hover {
+            border-color: #CBD5E1;
+        }
+        .safety-card {
+            background: #FFFFFF;
+            border-radius: 1rem;
+            border: 2px solid #FECACA;
+            box-shadow: 0 4px 6px -1px rgba(220, 38, 38, 0.05);
+        }
+        html {
+            scroll-behavior: smooth;
         }
     </style>
 </head>
-<body class="min-h-screen text-slate-700 font-sans">
-<div class="max-w-3xl mx-auto px-4 py-10 md:py-14">
-    <!-- Page Header -->
-    <div class="text-center mb-12 relative py-6 dot-pattern rounded-3xl">
-        <div class="inline-flex items-center justify-center mb-5">
-            <i class="fa-solid fa-waveform-lines text-primary text-4xl"></i>
+<body class="min-h-screen text-slate-700 antialiased selection:bg-brand-100 selection:text-brand-900">
+
+    <!-- Top Sticky Header -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 py-3.5 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-brand-500 flex items-center justify-center text-white font-bold text-xl shadow-sm">
+                    <i class="fa-solid fa-microphone-lines"></i>
+                </div>
+                <div>
+                    <h1 class="text-base font-bold text-slate-900 leading-tight">Ovia – Real Voices Connections</h1>
+                    <p class="text-xs text-slate-500 font-medium">Privacy Policy & Child Safety Standards</p>
+                </div>
+            </div>
+            <a href="#child-safety" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-safety-50 text-safety-700 border border-safety-100 hover:bg-safety-100 transition-colors">
+                <i class="fa-solid fa-shield-halved text-safety-600"></i>
+                Child Safety Policy
+            </a>
         </div>
-        <h1 class="text-[clamp(1.7rem,5vw,2.3rem)] font-semibold text-primary">Privacy Policy</h1>
-        <p class="mt-3 text-textlight/90 text-base font-medium">
-            Official Privacy Documentation for <strong>Ovia – Real Voices, Real Connections</strong>
-        </p>
-        <p class="mt-1 text-textlight/70 text-sm">
-            Published by Developer: <strong>raheel khan</strong>
-        </p>
-        <p class="text-xs mt-3 text-slate-500">Revised Date: 2026.10.02</p>
-    </div>
+    </header>
 
+    <!-- Main Content Container -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 py-8 md:py-12 space-y-8">
 
-    <div class="space-y-6">
-        <!-- Opening Paragraph -->
-        <div class="section-wrap">
-            <span class="corner-accent top-0 right-0 bg-secondary rounded-bl-full"></span>
-            <p class="text-sm md:text-base leading-relaxed text-slate-700">
-                This Privacy Policy describes how developer <strong>raheel khan</strong>, operating under Ovia Development Company (“we”, “us”, or “our team”), collects, uses, processes, stores, and safeguards personal and sensitive user data belonging to users of our voice-focused social mobile application <strong>Ovia – Real Voices, Real Connections</strong> (Application ID: com.ovia.popte). By installing, accessing, or using <strong>Ovia – Real Voices, Real Connections</strong>, you acknowledge that you have read and understand the data handling practices described within this policy. If you do not agree to these data processing practices, please do not use the application or provide any personal information.
+        <!-- Hero Document Header -->
+        <div class="bg-gradient-to-br from-brand-900 via-brand-800 to-slate-900 text-white rounded-3xl p-6 sm:p-10 shadow-lg relative overflow-hidden">
+            <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-brand-500/20 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="relative z-10 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium bg-brand-500/30 text-brand-100 border border-brand-500/40">
+                    <i class="fa-solid fa-certificate text-emerald-400"></i>
+                    Official Policy Document & Google Play Standards Compliance
+                </div>
+                <h1 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-white leading-tight">
+                    Privacy Notice & Child Safety Standards
+                </h1>
+                <p class="text-slate-300 text-sm sm:text-base max-w-2xl leading-relaxed">
+                    This document sets out the data privacy practices, user data handling rules, permissions usage, and explicit Child Safety Standards for the mobile application <strong class="text-white font-bold">Ovia – Real Voices Connections</strong>.
+                </p>
+
+                <div class="pt-4 border-t border-slate-700/80 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+                    <div>
+                        <span class="block text-slate-400">Application Name:</span>
+                        <strong class="text-white text-sm font-semibold">Ovia – Real Voices Connections</strong>
+                    </div>
+                    <div>
+                        <span class="block text-slate-400">Application ID:</span>
+                        <code class="text-emerald-300 font-mono text-xs bg-slate-800/80 px-2 py-0.5 rounded">com.ovia.popte</code>
+                    </div>
+                    <div>
+                        <span class="block text-slate-400">Developer:</span>
+                        <strong class="text-white font-semibold">raheel khan</strong>
+                    </div>
+                    <div>
+                        <span class="block text-slate-400">Effective Date:</span>
+                        <span class="text-slate-200 font-medium">October 2, 2026</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Jump Navigation -->
+        <nav class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm flex flex-wrap gap-2 text-xs font-medium">
+            <span class="text-slate-400 py-1 font-semibold">Jump to section:</span>
+            <a href="#child-safety" class="px-3 py-1 rounded-lg bg-red-50 text-red-700 hover:bg-red-100 font-bold transition-colors">1. Child Safety & CSAE Policy</a>
+            <a href="#data-collection" class="px-3 py-1 rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors">2. Information Collection</a>
+            <a href="#microphone-permissions" class="px-3 py-1 rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors">3. Voice Data & Permissions</a>
+            <a href="#data-usage" class="px-3 py-1 rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors">4. Data Usage & Purpose</a>
+            <a href="#data-sharing" class="px-3 py-1 rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors">5. Data Disclosure & Sharing</a>
+            <a href="#data-deletion" class="px-3 py-1 rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors">6. Data Retention & Deletion</a>
+            <a href="#user-rights" class="px-3 py-1 rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors">7. User Privacy Rights</a>
+            <a href="#contact" class="px-3 py-1 rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors">8. Contact Information</a>
+        </nav>
+
+        <!-- SECTION 1: CRITICAL CHILD SAFETY STANDARDS & CSAE PROHIBITION -->
+        <section id="child-safety" class="safety-card p-6 sm:p-8 space-y-6 relative overflow-hidden">
+            <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-2xl bg-safety-100 text-safety-700 flex items-center justify-center text-2xl flex-shrink-0">
+                    <i class="fa-solid fa-shield-cat"></i>
+                </div>
+                <div>
+                    <div class="inline-block px-2.5 py-0.5 rounded-md bg-safety-100 text-safety-800 text-xs font-bold uppercase tracking-wide mb-1">
+                        Mandatory Compliance Declaration
+                    </div>
+                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900">
+                        1. Child Safety Standards & Zero-Tolerance CSAE/CSAM Policy
+                    </h2>
+                    <p class="text-xs text-slate-500 mt-0.5">
+                        Published Standards in Compliance with Google Play Child Safety Standards Policy
+                    </p>
+                </div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-red-50/80 border border-red-200 text-slate-800 text-sm leading-relaxed space-y-3">
+                <p class="font-semibold text-red-950">
+                    Developer Declaration by <strong class="text-red-900">raheel khan</strong> for <strong class="text-red-950">Ovia – Real Voices Connections</strong>:
+                </p>
+                <p>
+                    <strong class="text-red-950">Ovia – Real Voices Connections</strong> maintains a strict <strong class="text-red-900 font-bold">ZERO-TOLERANCE POLICY</strong> against Child Sexual Abuse Material (CSAM), Child Sexual Abuse and Exploitation (CSAE), child exploitation, child grooming, and any action that endangers the safety, well-being, or privacy of minors.
+                </p>
+            </div>
+
+            <div class="space-y-4 text-sm sm:text-base leading-relaxed text-slate-700">
+                <h3 class="font-bold text-slate-900 text-base flex items-center gap-2">
+                    <i class="fa-solid fa-circle-exclamation text-safety-600"></i>
+                    A. Explicit Prohibition of CSAE and CSAM
+                </h3>
+                <p>
+                    Users of <strong class="font-bold text-slate-900">Ovia – Real Voices Connections</strong> are strictly prohibited from generating, transmitting, hosting, sharing, storing, soliciting, or displaying any content related to:
+                </p>
+                <ul class="list-disc pl-6 space-y-2 text-slate-700 text-sm">
+                    <li>Child Sexual Abuse Material (CSAM) in any form (visual, text, audio stream, or link).</li>
+                    <li>Child Sexual Exploitation and Abuse (CSAE), including child sexual solicitation, sextortion, or trafficking.</li>
+                    <li>Child grooming behavior, illegal contact with minors, or sexualization of children under 18 years of age.</li>
+                    <li>Any communication, live voice interaction, or user profile content that facilitates child endangerment.</li>
+                </ul>
+
+                <h3 class="font-bold text-slate-900 text-base flex items-center gap-2 pt-2">
+                    <i class="fa-solid fa-gavel text-safety-600"></i>
+                    B. Moderation, Reporting & Immediate Enforcement Actions
+                </h3>
+                <p>
+                    To enforce these safety standards, developer <strong class="font-bold text-slate-900">raheel khan</strong> operates multi-layered safety mechanisms within <strong class="font-bold text-slate-900">Ovia – Real Voices Connections</strong>:
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm pt-1">
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                        <div class="font-bold text-slate-900 mb-1 flex items-center gap-2">
+                            <i class="fa-solid fa-flag text-amber-600"></i>
+                            In-App User Reporting
+                        </div>
+                        <p class="text-xs text-slate-600 leading-normal">
+                            Users can report any inappropriate room, profile, voice chat, or text message instantly using in-app report buttons. All CSAE/CSAM reports are immediately flagged for priority urgent review.
+                        </p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                        <div class="font-bold text-slate-900 mb-1 flex items-center gap-2">
+                            <i class="fa-solid fa-bolt text-red-600"></i>
+                            Immediate Account Termination
+                        </div>
+                        <p class="text-xs text-slate-600 leading-normal">
+                            Any account found engaging in CSAE/CSAM activity is permanently banned immediately, content is deleted within 24 hours, and hardware/device access is blocked permanently.
+                        </p>
+                    </div>
+                </div>
+
+                <h3 class="font-bold text-slate-900 text-base flex items-center gap-2 pt-2">
+                    <i class="fa-solid fa-building-shield text-safety-600"></i>
+                    C. Mandatory Reporting to Law Enforcement & NCMEC
+                </h3>
+                <p class="text-sm">
+                    In compliance with international laws and Google Play Child Safety Policies, developer <strong class="font-bold text-slate-900">raheel khan</strong> immediately reports any identified CSAM or CSAE content and associated user details to the National Center for Missing & Exploited Children (NCMEC) CyberTipline and relevant local/international law enforcement authorities.
+                </p>
+
+                <div class="p-4 rounded-xl bg-slate-900 text-white space-y-2 mt-4">
+                    <div class="flex items-center gap-2 text-safety-500 font-bold text-sm">
+                        <i class="fa-solid fa-user-shield"></i>
+                        Designated Child Safety Point of Contact
+                    </div>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        For child safety inquiries, urgent reports of CSAE/CSAM, or regulatory communications regarding <strong class="text-white">Ovia – Real Voices Connections</strong>, please contact the designated Child Safety Officer directly:
+                    </p>
+                    <div class="text-xs space-y-1 pt-1 font-mono text-emerald-300">
+                        <p><strong>Point of Contact:</strong> raheel khan</p>
+                        <p><strong>Dedicated Safety Email:</strong> <a href="mailto:raheelk.dev@gmail.com" class="underline hover:text-white">raheelk.dev@gmail.com</a></p>
+                        <p><strong>Physical Address:</strong> Flat 1205, Tower 2, Ocean View Estate, 38 Victoria Road, Kennedy Town, Hong Kong</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: RESPONSIBLE PARTY & APPLICATION DETAILS -->
+        <section id="responsible-party" class="section-card p-6 sm:p-8 space-y-4">
+            <h2 class="text-lg sm:text-xl font-bold text-slate-900 flex items-center gap-3">
+                <span class="w-1.5 h-6 bg-brand-500 rounded-full"></span>
+                2. Data Controller & Responsible Party
+            </h2>
+            <p class="text-sm sm:text-base leading-relaxed text-slate-700">
+                The data controller responsible for personal information processed under this privacy notice for the mobile application <strong class="font-bold text-slate-900">Ovia – Real Voices Connections</strong> (Application ID: <code class="font-mono text-xs bg-slate-100 px-1.5 py-0.5 rounded text-brand-700">com.ovia.popte</code>) is developer <strong class="font-bold text-slate-900">raheel khan</strong>.
             </p>
-        </div>
-
-
-        <div class="section-wrap">
-            <span class="corner-accent bottom-0 left-0 bg-primary rounded-tr-full"></span>
-            <h2 class="text-lg font-semibold text-primary mb-4 flex items-center justify-between">
-                <span class="flex items-center gap-3">
-                    <span class="w-1 h-6 bg-secondary rounded-full"></span>
-                    1. Responsible Party For Personal Information
-                </span>
-                <i class="fa-solid fa-user-shield text-secondary"></i>
-            </h2>
-            <div class="text-sm md:text-base leading-relaxed text-slate-700 space-y-3">
-                <p>
-                    The party accountable for managing your personal data is raheel khan, operating under Ovia Development Company. For all inquiries concerning privacy matters, data access requests or your personal details, you may reach our support team via electronic mail:
-                    <span class="text-primary font-medium">raheelk.dev@gmail.com</span>
-                </p>
-                <p>
-                    Registered business premise: 112 Oakwood Avenue, Toronto ON M5V 2T7, Canada
-                </p>
+            <div class="bg-slate-50 rounded-xl p-4 border border-slate-200 text-xs sm:text-sm text-slate-700 space-y-1.5">
+                <p><strong>Application Title:</strong> <strong class="font-bold text-slate-900">Ovia – Real Voices Connections</strong></p>
+                <p><strong>Package Name / Application ID:</strong> <code class="font-mono text-xs">com.ovia.popte</code></p>
+                <p><strong>Developer Name:</strong> raheel khan</p>
+                <p><strong>Developer Email:</strong> <a href="mailto:raheelk.dev@gmail.com" class="text-brand-600 underline font-medium">raheelk.dev@gmail.com</a></p>
+                <p><strong>Official Address:</strong> Flat 1205, Tower 2, Ocean View Estate, 38 Victoria Road, Kennedy Town, Hong Kong</p>
             </div>
-        </div>
+        </section>
 
-        <div class="section-wrap">
-            <span class="corner-accent top-0 right-0 bg-secondary rounded-bl-full"></span>
-            <h2 class="text-lg font-semibold text-primary mb-4 flex items-center justify-between">
-                <span class="flex items-center gap-3">
-                    <span class="w-1 h-6 bg-secondary rounded-full"></span>
-                    2. Information We Collect From End‑Users
-                </span>
-                <i class="fa-solid fa-database text-secondary"></i>
+        <!-- SECTION 3: INFORMATION WE COLLECT -->
+        <section id="data-collection" class="section-card p-6 sm:p-8 space-y-4">
+            <h2 class="text-lg sm:text-xl font-bold text-slate-900 flex items-center gap-3">
+                <span class="w-1.5 h-6 bg-brand-500 rounded-full"></span>
+                3. Information We Collect
             </h2>
-            <div class="text-sm md:text-base leading-relaxed text-slate-700">
-                <p class="mb-3">We may obtain various types of data while you interact within our voice‑chat social community:</p>
-                <ul class="list-disc pl-5 space-y-2">
-                    <li><strong>Account And Profile Details:</strong> Self‑chosen display name, uploaded profile avatar, public bio text and any contact information you voluntarily supply when creating your user account.</li>
-                    <li><strong>Voice Conversation Material:</strong> Live audio streams generated during real‑time voice chats with other platform participants. Voice data gets temporary processing to deliver interactive audio features. We do not permanently save most voice conversations unless users manually turn on recording functions.</li>
-                    <li><strong>Hardware And System‑Related Data:</strong> Mobile device model, operating system build, unique device identifiers, network connection metadata, application crash logs, public internet protocol address and usage analytics to maintain stable app performance.</li>
-                    <li><strong>User‑Generated Shared Material:</strong> Text messages, image files and other media content you actively send inside public voice spaces as well as private one‑on‑one conversations within Ovia.</li>
-                </ul>
+            <p class="text-sm sm:text-base leading-relaxed text-slate-700">
+                To operate <strong class="font-bold text-slate-900">Ovia – Real Voices Connections</strong> and enable real-time voice interactions, we collect the following categories of personal and technical data:
+            </p>
+            <div class="space-y-3 text-sm">
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                    <h3 class="font-bold text-slate-900 text-base mb-1">A. Account & Profile Information</h3>
+                    <p class="text-slate-600">
+                        When you register an account on <strong class="font-bold text-slate-900">Ovia – Real Voices Connections</strong>, we collect your self-provided display name, profile picture/avatar, user bio, email address, and account login identifiers.
+                    </p>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                    <h3 class="font-bold text-slate-900 text-base mb-1">B. Voice & Audio Data</h3>
+                    <p class="text-slate-600">
+                        <strong class="font-bold text-slate-900">Ovia – Real Voices Connections</strong> is a voice-focused social networking app. Live voice audio streams are processed in real-time to facilitate group audio rooms and direct voice calls. Live voice streams are processed ephemerally for real-time transmission and are not permanently recorded or saved unless explicitly saved by user actions or flagged for moderation/safety reviews.
+                    </p>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                    <h3 class="font-bold text-slate-900 text-base mb-1">C. Technical & Device Identifiers</h3>
+                    <p class="text-slate-600">
+                        We automatically collect hardware device model, operating system version, unique device identifiers (Android ID), IP address, app version, network connectivity status, crash reports, and system performance logs to maintain app security and stability.
+                    </p>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                    <h3 class="font-bold text-slate-900 text-base mb-1">D. User-Generated Content & Communications</h3>
+                    <p class="text-slate-600">
+                        Text messages, images, audio clips, feedback submissions, and content shared inside public or private rooms within <strong class="font-bold text-slate-900">Ovia – Real Voices Connections</strong>.
+                    </p>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div class="section-wrap">
-            <span class="corner-accent bottom-0 left-0 bg-primary rounded-tr-full"></span>
-            <h2 class="text-lg font-semibold text-primary mb-4 flex items-center justify-between">
-                <span class="flex items-center gap-3">
-                    <span class="w-1 h-6 bg-secondary rounded-full"></span>
-                    3. Purposes For Processing Gathered Information
-                </span>
-                <i class="fa-solid fa-bullseye text-secondary"></i>
+        <!-- SECTION 4: VOICE DATA & PERMISSIONS -->
+        <section id="microphone-permissions" class="section-card p-6 sm:p-8 space-y-4">
+            <h2 class="text-lg sm:text-xl font-bold text-slate-900 flex items-center gap-3">
+                <span class="w-1.5 h-6 bg-brand-500 rounded-full"></span>
+                4. Microphone Access & Device Permissions Declaration
             </h2>
-            <div class="text-sm md:text-base leading-relaxed text-slate-700">
-                <p class="mb-3">We process your personal data for these legitimate operational objectives:</p>
-                <ul class="list-disc pl-5 space-y-2">
-                    <li>Supply, sustain, enhance and roll out updates for all voice‑chat and social networking capabilities offered by Ovia;</li>
-                    <li>Verify user identities, administer registered profiles and block unauthorized account login attempts;</li>
-                    <li>Carry out platform content moderation activities, limit harmful conduct and safeguard safety for every community participant;</li>
-                    <li>Resolve technical faults, respond to user help‑desk submissions and fix service malfunctions;</li>
-                    <li>Examine anonymized usage patterns to improve user experience and build additional voice‑driven social functions;</li>
-                    <li>Enforce our service terms and apply access restrictions for profiles violating community behavioural guidelines.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="section-wrap">
-            <span class="corner-accent top-0 right-0 bg-secondary rounded-bl-full"></span>
-            <h2 class="text-lg font-semibold text-primary mb-4 flex items-center justify-between">
-                <span class="flex items-center gap-3">
-                    <span class="w-1 h-6 bg-secondary rounded-full"></span>
-                    4. Circumstances Allowing Information Disclosure
-                </span>
-                <i class="fa-solid fa-share-nodes text-secondary"></i>
-            </h2>
-            <div class="text-sm md:text-base leading-relaxed text-slate-700">
-                <p class="mb-3">We will never sell your personal details to third‑party commercial entities without your clear, explicit approval. Data sharing may only take place under the following situations:</p>
-                <ul class="list-disc pl-5 space-y-2">
-                    <li>Authorized external service providers supporting app operations (cloud hosting, crash diagnostic services), who are bound by strict data‑protection contractual obligations;</li>
-                    <li>Official law‑enforcement bodies, in response to valid legal summons, court judgements or regulatory reporting requirements mandating data release;</li>
-                    <li>Corporate merger, acquisition or asset transfer occurrences, where user information transfers along with business assets while existing privacy commitments stay effective;</li>
-                    <li>Scenarios necessary to defend our lawful interests, protect platform participants or stop ongoing unlawful behaviour.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="section-wrap">
-            <span class="corner-accent bottom-0 left-0 bg-primary rounded-tr-full"></span>
-            <h2 class="text-lg font-semibold text-primary mb-4 flex items-center justify-between">
-                <span class="flex items-center gap-3">
-                    <span class="w-1 h-6 bg-secondary rounded-full"></span>
-                    5. Data Retention Policies And Protective Measures
-                </span>
-                <i class="fa-solid fa-lock text-secondary"></i>
-            </h2>
-            <div class="text-sm md:text-base leading-relaxed text-slate-700 space-y-3">
-                <p>We apply widely‑accepted industry‑grade security standards to shield your personal information from unauthorized access, data loss, information leakage or improper modification. Even so, no internet‑based digital platform can offer absolute security for information transmitted across online networks.</p>
-                <p>We hold onto user data only for periods reasonably required for business needs: account‑related information remains stored as long as your profile stays active. Once you submit an official account deletion request, we will erase your personally identifiable records within time limits set by applicable local legislation. A small subset of records may be preserved longer to satisfy statutory compliance duties.</p>
-            </div>
-        </div>
-
-        <div class="section-wrap">
-            <span class="corner-accent top-0 right-0 bg-secondary rounded-bl-full"></span>
-            <h2 class="text-lg font-semibold text-primary mb-4 flex items-center justify-between">
-                <span class="flex items-center gap-3">
-                    <span class="w-1 h-6 bg-secondary rounded-full"></span>
-                    6. Your Available Rights Regarding Personal Data
-                </span>
-                <i class="fa-solid fa-user-check text-secondary"></i>
-            </h2>
-            <div class="text-sm md:text-base leading-relaxed text-slate-700">
-                <p class="mb-3">Subject to applicable regional privacy regulations, you hold the rights listed below:</p>
-                <ul class="list-disc pl-5 space-y-2">
-                    <li>The entitlement to obtain a copy of all personal records we hold connected with your user profile;</li>
-                    <li>The entitlement to amend inaccurate or incomplete profile‑related information;</li>
-                    <li>The entitlement to submit formal requests for full account removal and deletion of associated personal records;</li>
-                    <li>The entitlement to withdraw any prior consent you have granted for personal‑data processing activities;</li>
-                    <li>The entitlement to lodge formal complaints with local data‑protection supervisory authorities.</li>
-                </ul>
-                <p class="mt-3">To exercise any one of these entitlements, send your formal application using the contact email listed above.</p>
-            </div>
-        </div>
-
-        <div class="section-wrap">
-            <span class="corner-accent bottom-0 left-0 bg-primary rounded-tr-full"></span>
-            <h2 class="text-lg font-semibold text-primary mb-4 flex items-center justify-between">
-                <span class="flex items-center gap-3">
-                    <span class="w-1 h-6 bg-secondary rounded-full"></span>
-                    7. Provisions For Underage Site Visitors
-                </span>
-                <i class="fa-solid fa-child-reaching text-secondary"></i>
-            </h2>
-            <div class="text-sm md:text-base leading-relaxed text-slate-700">
-                <p>Ovia is not meant for individuals under thirteen years old. We do not intentionally collect personal information belonging to minors falling under this age threshold. If you become aware we have obtained data from a child without legal guardian consent, please notify us promptly, and we will remove such information without undue delay.</p>
-            </div>
-        </div>
-
-        <div class="section-wrap">
-            <span class="corner-accent top-0 right-0 bg-secondary rounded-bl-full"></span>
-            <h2 class="text-lg font-semibold text-primary mb-4 flex items-center justify-between">
-                <span class="flex items-center gap-3">
-                    <span class="w-1 h-6 bg-secondary rounded-full"></span>
-                    8. Adjustments Made To This Privacy Notice
-                </span>
-                <i class="fa-solid fa-file-pen text-secondary"></i>
-            </h2>
-            <div class="text-sm md:text-base leading-relaxed text-slate-700">
-                <p>We keep the authority to revise this privacy notice at any moment. When material adjustments get introduced, we will publish the revised document inside the Ovia mobile application and update the “Revised Date” displayed near the top of this page. Your continued usage of our voice‑social platform after updates take effect counts as acceptance of the revised privacy provisions.</p>
-            </div>
-        </div>
-
-        <div class="section-wrap">
-            <span class="corner-accent bottom-0 left-0 bg-primary rounded-tr-full"></span>
-            <h2 class="text-lg font-semibold text-primary mb-4 flex items-center justify-between">
-                <span class="flex items-center gap-3">
-                    <span class="w-1 h-6 bg-secondary rounded-full"></span>
-                    9. Ways To Reach Our Team
-                </span>
-                <i class="fa-solid fa-envelope text-secondary"></i>
-            </h2>
-            <div class="text-sm md:text-base leading-relaxed text-slate-700">
-                <p>Should you hold questions, feedback or data‑related requests about this notice and Ovia’s personal‑data handling procedures, please write to our team via email:
-                    <span class="text-primary font-medium">raheelk.dev@gmail.com</span>
+            <p class="text-sm sm:text-base leading-relaxed text-slate-700">
+                In strict compliance with Google Play Developer Policies on App Permissions and User Data:
+            </p>
+            <div class="p-4 rounded-xl bg-emerald-50/60 border border-emerald-200 text-sm space-y-2">
+                <div class="font-bold text-emerald-950 flex items-center gap-2">
+                    <i class="fa-solid fa-microphone text-brand-600"></i>
+                    Microphone Permission (RECORD_AUDIO)
+                </div>
+                <p class="text-slate-700 text-xs sm:text-sm leading-relaxed">
+                    <strong class="font-bold text-slate-900">Ovia – Real Voices Connections</strong> requires access to your device microphone solely to enable core features such as live voice room participation, real-time voice streaming, and voice messages. Microphone data is accessed strictly while you actively use voice features and is never accessed secretly or in the background without user context.
                 </p>
             </div>
-        </div>
-    </div>
+        </section>
+
+        <!-- SECTION 5: HOW WE USE DATA -->
+        <section id="data-usage" class="section-card p-6 sm:p-8 space-y-4">
+            <h2 class="text-lg sm:text-xl font-bold text-slate-900 flex items-center gap-3">
+                <span class="w-1.5 h-6 bg-brand-500 rounded-full"></span>
+                5. Purposes of Data Processing
+            </h2>
+            <p class="text-sm sm:text-base leading-relaxed text-slate-700">
+                We process collected data exclusively for legitimate operational purposes:
+            </p>
+            <ul class="list-disc pl-6 space-y-2 text-sm text-slate-700">
+                <li>Providing and delivering core real-time voice communication features of <strong class="font-bold text-slate-900">Ovia – Real Voices Connections</strong>.</li>
+                <li>Authenticating user accounts and safeguarding user profiles from unauthorized access.</li>
+                <li>Enforcing Child Safety Standards, community guidelines, preventing harassment, and removing prohibited CSAE/CSAM content.</li>
+                <li>Diagnosing server crashes, technical bugs, and optimizing audio stream stability.</li>
+                <li>Responding to user customer support requests and data privacy inquiries.</li>
+            </ul>
+        </section>
+
+        <!-- SECTION 6: DATA DISCLOSURE & SHARING -->
+        <section id="data-sharing" class="section-card p-6 sm:p-8 space-y-4">
+            <h2 class="text-lg sm:text-xl font-bold text-slate-900 flex items-center gap-3">
+                <span class="w-1.5 h-6 bg-brand-500 rounded-full"></span>
+                6. Data Sharing & Third-Party Disclosure
+            </h2>
+            <p class="text-sm sm:text-base leading-relaxed text-slate-700">
+                Developer <strong class="font-bold text-slate-900">raheel khan</strong> <strong class="text-slate-900 font-bold">DOES NOT SELL</strong> your personal data to third parties or data brokers. Data disclosure occurs only under the following limited circumstances:
+            </p>
+            <ul class="list-disc pl-6 space-y-2 text-sm text-slate-700">
+                <li><strong class="font-semibold text-slate-900">Service Infrastructure Providers:</strong> Third-party cloud hosting, real-time voice infrastructure (RTC SDKs), and analytics services operating under strict data confidentiality agreements.</li>
+                <li><strong class="font-semibold text-slate-900">Law Enforcement & NCMEC:</strong> Disclosure when mandated by law, court order, or when necessary to protect child safety, report CSAE/CSAM, or prevent imminent harm.</li>
+                <li><strong class="font-semibold text-slate-900">Protection of Rights:</strong> Enforcing our Terms of Service and defending user safety against malicious abuse or fraud.</li>
+            </ul>
+        </section>
+
+        <!-- SECTION 7: DATA RETENTION & ACCOUNT DELETION -->
+        <section id="data-deletion" class="section-card p-6 sm:p-8 space-y-4">
+            <h2 class="text-lg sm:text-xl font-bold text-slate-900 flex items-center gap-3">
+                <span class="w-1.5 h-6 bg-brand-500 rounded-full"></span>
+                7. Data Retention & Account Deletion Policy
+            </h2>
+            <p class="text-sm sm:text-base leading-relaxed text-slate-700">
+                In compliance with Google Play User Data policies on Account Deletion Requirements:
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm pt-2">
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+                    <div class="font-bold text-slate-900 flex items-center gap-2">
+                        <i class="fa-solid fa-mobile-screen-button text-brand-600"></i>
+                        In-App Account Deletion
+                    </div>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        You can delete your account and associated personal data directly within <strong class="font-bold text-slate-900">Ovia – Real Voices Connections</strong> by navigating to:
+                        <span class="block mt-1 font-mono text-xs bg-white p-2 rounded border border-slate-200 text-slate-800">
+                            Settings &gt; Account &gt; Delete Account
+                        </span>
+                    </p>
+                </div>
+
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+                    <div class="font-bold text-slate-900 flex items-center gap-2">
+                        <i class="fa-solid fa-envelope text-brand-600"></i>
+                        Web / Email Deletion Request
+                    </div>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        If you cannot access the app, you can request full account and data erasure by emailing developer <strong class="font-bold text-slate-900">raheel khan</strong> at:
+                        <a href="mailto:raheelk.dev@gmail.com?subject=Account%20Deletion%20Request%20-%20Ovia" class="block mt-1 font-mono text-xs bg-white p-2 rounded border border-slate-200 text-brand-700 font-semibold underline">
+                            raheelk.dev@gmail.com
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <p class="text-xs text-slate-500 pt-1">
+                Upon account deletion, your profile details, chat records, and personal identifiers are permanently removed from active databases within 30 days, except where retention is required by law.
+            </p>
+        </section>
+
+        <!-- SECTION 8: USER PRIVACY RIGHTS -->
+        <section id="user-rights" class="section-card p-6 sm:p-8 space-y-4">
+            <h2 class="text-lg sm:text-xl font-bold text-slate-900 flex items-center gap-3">
+                <span class="w-1.5 h-6 bg-brand-500 rounded-full"></span>
+                8. Your Privacy Rights (GDPR / CCPA / Global)
+            </h2>
+            <p class="text-sm sm:text-base leading-relaxed text-slate-700">
+                Regardless of your geographical location, users of <strong class="font-bold text-slate-900">Ovia – Real Voices Connections</strong> enjoy full rights regarding their personal information:
+            </p>
+            <ul class="list-disc pl-6 space-y-2 text-sm text-slate-700">
+                <li><strong class="font-semibold text-slate-900">Right to Access:</strong> Request a copy of personal data associated with your profile.</li>
+                <li><strong class="font-semibold text-slate-900">Right to Rectification:</strong> Correct inaccurate or incomplete profile data.</li>
+                <li><strong class="font-semibold text-slate-900">Right to Erasure:</strong> Request permanent deletion of your account and personal records.</li>
+                <li><strong class="font-semibold text-slate-900">Right to Withdraw Consent:</strong> Revoke microphone permissions or data processing consents at any time.</li>
+            </ul>
+        </section>
+
+        <!-- SECTION 9: CONTACT INFORMATION -->
+        <section id="contact" class="section-card p-6 sm:p-8 space-y-4 bg-gradient-to-br from-white via-slate-50 to-brand-50/30">
+            <h2 class="text-lg sm:text-xl font-bold text-slate-900 flex items-center gap-3">
+                <span class="w-1.5 h-6 bg-brand-500 rounded-full"></span>
+                9. Contact Information & Developer Details
+            </h2>
+            <p class="text-sm sm:text-base leading-relaxed text-slate-700">
+                If you have questions, feedback, privacy concerns, or child safety reports concerning <strong class="font-bold text-slate-900">Ovia – Real Voices Connections</strong>, please contact us using the details below:
+            </p>
+            <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-2 text-sm">
+                <p class="text-slate-900 font-bold text-base"><strong class="font-bold text-slate-900">Ovia – Real Voices Connections</strong></p>
+                <p><span class="text-slate-500">Application ID:</span> <code class="font-mono text-xs text-brand-700">com.ovia.popte</code></p>
+                <p><span class="text-slate-500">Developer Name:</span> <strong class="text-slate-800">raheel khan</strong></p>
+                <p><span class="text-slate-500">Official Contact Email:</span> <a href="mailto:raheelk.dev@gmail.com" class="text-brand-600 font-semibold underline">raheelk.dev@gmail.com</a></p>
+                <p><span class="text-slate-500">Child Safety Contact Email:</span> <a href="mailto:raheelk.dev@gmail.com" class="text-safety-700 font-semibold underline">raheelk.dev@gmail.com</a></p>
+                <p><span class="text-slate-500">Physical Address:</span> Flat 1205, Tower 2, Ocean View Estate, 38 Victoria Road, Kennedy Town, Hong Kong</p>
+            </div>
+        </section>
+
+    </main>
 
     <!-- Page Footer -->
-    <div class="mt-12 text-center text-xs text-slate-500">
-        <p>Ovia – Real Voices, Real Connections | Application ID: com.ovia.popte</p>
-        <p class="mt-1">© 2026 Ovia Development Company. All intellectual rights reserved.</p>
-    </div>
-</div>
-<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"ccc37c94507049d284be0a83cfba3f45","r":1,"spa":2}' crossorigin="anonymous"></script>
+    <footer class="border-t border-slate-200 bg-white py-8 text-center text-xs text-slate-500">
+        <div class="max-w-4xl mx-auto px-4 space-y-2">
+            <p class="font-medium text-slate-700">
+                <strong class="font-bold text-slate-900">Ovia – Real Voices Connections</strong> | Application ID: <code class="font-mono text-xs">com.ovia.popte</code>
+            </p>
+            <p>Developer: <strong>raheel khan</strong> | Contact: raheelk.dev@gmail.com</p>
+            <p class="text-slate-400">© 2026 raheel khan. All Rights Reserved. Compliant with Google Play Developer Policies & Child Safety Standards.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
